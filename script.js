@@ -86,3 +86,17 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCarousel(); // Muestra el primer slide al cargar
     startAutoSlide(); // Inicia el deslizamiento automático
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // ... (todo tu código JavaScript existente, como el del carrusel) ...
+
+    // Nuevo código para el menú de hamburguesa
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+});
