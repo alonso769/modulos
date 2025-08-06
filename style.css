@@ -885,233 +885,265 @@ section:not(.solutions-panel-section) h2::after {
 
 /* Reset and base */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #222;
-  background: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #fff;
 }
 
 /* Sección fabricanes */
 .fabricantes-section {
-  background-color: #065a9a; /* azul similar */
-  text-align: center;
-  padding: 2rem 1rem 3rem;
-  color: white;
-  user-select: none;
+    background-color: #065a9a; /* azul similar */
+    text-align: center;
+    padding: 2rem 1rem 3rem;
+    color: white;
+    user-select: none;
 }
 /* Logo estilo sello con rotación */
 .fabricantes-logo {
-  display: inline-block;
-  margin-bottom: 1rem;
-  position: relative;
-  width: 180px;
-  aspect-ratio: 1 / 1;
+    display: inline-block;
+    margin-bottom: 1rem;
+    position: relative;
+    width: 180px;
+    aspect-ratio: 1 / 1;
 }
 /* The white circle ring and elements */
 .stamp-circle {
-  position: absolute;
-  inset: 0;
-  border: 4px solid white;
-  border-radius: 50%;
-  box-sizing: border-box;
-  filter: drop-shadow(0 0 1px white);
+    position: absolute;
+    inset: 0;
+    border: 4px solid white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    filter: drop-shadow(0 0 1px white);
 }
 /* Rough rough edge effect with multiple rings and strokes */
 .stamp-circle::before,
 .stamp-circle::after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  border: 2px solid white;
-  inset: 6px;
-  box-sizing: border-box;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid white;
+    inset: 6px;
+    box-sizing: border-box;
 }
 .stamp-circle::after {
-  inset: 12px;
-  border-style: dashed;
-  opacity: 0.6;
+    inset: 12px;
+    border-style: dashed;
+    opacity: 0.6;
 }
 
 /* Text inside circle */
 .stamp-text-top,
 .stamp-text-bottom {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  font-family: 'Courier New', Courier, monospace;
-  text-transform: uppercase;
-  user-select: none;
-  left: 0;
-  color: white;
-  filter: drop-shadow(0 0 1px black);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    user-select: none;
+    left: 0;
+    color: white;
+    filter: drop-shadow(0 0 1px black);
 }
 .stamp-text-top {
-  top: 28px;
-  transform: rotate(-4deg);
+    top: 28px;
+    transform: rotate(-4deg);
 }
 .stamp-text-bottom {
-  bottom: 28px;
-  transform: rotate(4deg);
+    bottom: 28px;
+    transform: rotate(4deg);
 }
 
 /* Central big diagonal text */
 .stamp-main-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-18deg);
-  font-size: 1.7rem;
-  font-weight: 900;
-  white-space: nowrap;
-  letter-spacing: 0.1em;
-  font-family: 'Impact', 'Arial Black', Gisha, sans-serif;
-  color: white;
-  text-shadow: 0 0 6px rgba(0,0,0,0.7);
-  user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-18deg);
+    font-size: 1.7rem;
+    font-weight: 900;
+    white-space: nowrap;
+    letter-spacing: 0.1em;
+    font-family: 'Impact', 'Arial Black', Gisha, sans-serif;
+    color: white;
+    text-shadow: 0 0 6px rgba(0,0,0,0.7);
+    user-select: none;
 }
 
 /* Texto descritivo con botón */
 .fabricantes-desc {
-  margin-top: 0;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  max-width: 360px;
-  margin-left: auto;
-  margin-right: auto;
+    margin-top: 0;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .fabricantes-btn {
-  background: transparent;
-  border: 1.5px solid white;
-  padding: 0.45rem 1.25rem;
-  color: white;
-  font-size: 0.85rem;
-  cursor: pointer;
-  border-radius: 3px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  user-select: none;
+    background: transparent;
+    border: 1.5px solid white;
+    padding: 0.45rem 1.25rem;
+    color: white;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    user-select: none;
 }
 .fabricantes-btn:hover,
 .fabricantes-btn:focus {
-  background: white;
-  color: #065a9a;
-  outline: none;
+    background: white;
+    color: #065a9a;
+    outline: none;
 }
 
 /* Clientes Section */
 .clientes-section {
-  padding: 2rem 1rem 3rem;
-  text-align: center;
+    padding: 2rem 1rem 3rem;
+    text-align: center;
 }
 .clientes-title {
-  font-weight: 600;
-  font-size: 1.4rem;
-  margin-bottom: 1.8rem;
-  user-select: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 1.8rem;
+    user-select: none;
 }
 
-/* Carousel container */
+/* Contenedor del carrusel (nuevo para la animación) */
+.clientes-carousel-container {
+    max-width: 900px;
+    margin: 0 auto 1rem;
+    overflow: hidden; /* Esto oculta los logos que están fuera del contenedor */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.25rem;
+    background: #fff;
+}
+
+/* El carrusel en sí, que contendrá todos los logos y se animará */
 .clientes-carousel {
-  position: relative;
-  max-width: 900px;
-  margin: 0 auto 1rem;
-  display: flex;
-  gap: 0.3rem;
-  overflow: hidden;
-  border: 1px solid #ddd;
-  padding: 0.25rem;
-  background: #fff;
-  border-radius: 4px;
+    display: flex;
+    white-space: nowrap; /* Evita que los logos salten a una nueva línea */
+    animation: scroll 30s linear infinite; /* Animación de desplazamiento */
+    /* Detiene la animación al pasar el ratón */
+    &:hover {
+        animation-play-state: paused;
+    }
 }
 
-/* Cliente logo container */
+/* Define la animación de desplazamiento */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        /* Desplaza el carrusel el 50% de su ancho, que es el tamaño del primer conjunto de logos */
+        transform: translateX(-50%);
+    }
+}
+
+/* Contenedor de cada logo */
 .cliente-item {
-  flex: 1 0 16.6%; /* Show exactly 6 logos */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  border: 1px solid #eee;
-  padding: 0.8rem 0.5rem;
-  box-sizing: border-box;
-  transition: transform 0.25s ease;
-  cursor: default;
+    /* Flex-shrink evita que los logos se hagan más pequeños */
+    /* Flex-basis define el tamaño de cada logo */
+    flex: 0 0 auto;
+    width: 16.666%; /* 100% / 6 logos = 16.666% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 0.8rem 0.5rem;
+    box-sizing: border-box;
+    cursor: default;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Efecto al pasar el cursor sobre un logo */
 .cliente-item:hover {
-  transform: scale(1.05);
-  border-color: #065a9a;
-  box-shadow: 0 0 6px rgba(6,90,154,0.5);
-  z-index: 1;
-  background: #fefefe;
+    transform: scale(1.1); /* Hace el logo 10% más grande */
+    border-color: #065a9a; /* Borde de color primario */
+    box-shadow: 0 0 10px rgba(6, 90, 154, 0.7); /* Sombra para resaltarlo */
+    z-index: 1; /* Asegura que el logo resaltado esté por encima de los demás */
+    background: #fefefe;
 }
 
-/* Logos styling with max width and height */
+/* Logos styling */
 .cliente-item img {
-  max-height: 40px;
-  max-width: 90%;
-  object-fit: contain;
-  user-select: none;
+    max-height: 40px;
+    max-width: 90%;
+    object-fit: contain;
+    user-select: none;
 }
 
-/* Carousel navigation */
+/* Carousel navigation (mantengo estas reglas aunque no se usen con el carrusel automático) */
 .clientes-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    pointer-events: none;
 }
 .clientes-nav button {
-  pointer-events: auto;
-  position: absolute;
-  background-color: #888;
-  border: none;
-  color: white;
-  padding: 6px 9px;
-  cursor: pointer;
-  font-size: 1rem;
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
-  border-radius: 2px;
-  user-select: none;
+    pointer-events: auto;
+    position: absolute;
+    background-color: #888;
+    border: none;
+    color: white;
+    padding: 6px 9px;
+    cursor: pointer;
+    font-size: 1rem;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    border-radius: 2px;
+    user-select: none;
 }
 .clientes-nav button:hover,
 .clientes-nav button:focus {
-  opacity: 1;
-  outline: none;
+    opacity: 1;
+    outline: none;
 }
 .clientes-nav .prev {
-  left: 2px;
+    left: 2px;
 }
 .clientes-nav .next {
-  right: 2px;
+    right: 2px;
 }
 
 /* Link "Ver todos los Clientes" */
 .ver-todos-link {
-  font-size: 0.9rem;
-  color: #065a9a;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  user-select: none;
+    font-size: 0.9rem;
+    color: #065a9a;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
 }
 .ver-todos-link:hover,
 .ver-todos-link:focus {
-  text-decoration: underline;
-  outline: none;
+    text-decoration: underline;
+    outline: none;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .cliente-item {
+        width: 25%; /* Muestra 4 logos en pantallas medianas */
+    }
 }
 
 @media (max-width: 600px) {
-  .cliente-item {
-    flex: 1 0 33.33%; /* smaller viewport show 3 logos per view */
-  }
-  .fabricantes-logo {
-    width: 140px;
-  }
+    .cliente-item {
+        width: 33.333%; /* Muestra 3 logos en pantallas pequeñas */
+    }
+    .fabricantes-logo {
+        width: 140px;
+    }
 }
+
